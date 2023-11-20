@@ -1,0 +1,275 @@
+@font-face{
+    font-family: 'coco';
+    src: url('font/Coco-Sharp-Extrabold-trial.ttf') format("opentype");
+}
+@font-face{
+    font-family: 'geo';
+    src: url('font/GeosansLight.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+#Histoire-titre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Histoire-titre h1{
+    font-family: 'coco';
+    font-size: 50pt;
+    color: #E2DAD6;
+    padding-block-start: 160px;
+}
+
+#container img{
+    width: 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-image: url(photos/plages/mael-balland-454C7ma4q44-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    height: 75vh;
+}
+
+header #menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar #menu1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: 'geo';
+    font-size: 15pt;
+}
+a{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.navbar ul a{
+    color: #262e19;
+}
+
+.navbar .nav-links{
+    display: none;
+}
+
+.navbar a{
+    color: rgb(8,49,57);
+}
+
+#logo{
+    max-height: 65px;
+}
+
+.navbar .nav-links ul{
+    display: flex;
+}
+
+.navbar .nav-links ul li{
+    margin: 0 25px;
+    font-size: 1.2em;
+    font-family: 'geo';
+}
+.navbar .menu-hamburger{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+}
+
+
+:root{
+    --hauteur-menu: 60px;
+}
+
+.sous-menu{
+    display: none;
+    padding-top: 10px;
+}
+
+.sous-menu li{
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.448);
+}
+
+.sous-menu li:hover{
+    background-color: #0CA9B1;
+}
+
+.sous-menu li:hover > a{
+    color: #083139;
+}
+
+.menu-deroulant:hover > .sous-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+li .menu-deroulant{
+    text-align: right;
+}
+
+#description{
+    text-align: center;
+    font-family: 'geo';
+    margin-top: 8px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: white;   
+}
+
+
+
+
+p{
+    font-family: 'geo';
+    line-height: 1.25;
+}
+.images{
+    width: 50%;
+    object-fit: contain;
+    justify-self: center;
+    align-self: center;
+}
+.video{
+    object-fit: contain;
+    justify-self: center;
+    align-self: center;
+}
+
+.coté{
+    width: 85%;
+    justify-self: right;
+}
+
+.mer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    text-align: left;
+}
+#plages{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+hr{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-width: 1,5px;
+}
+h3{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: 'coco';
+}
+.type{
+    margin-bottom: 5px;
+}
+h2{
+    margin-bottom: 18px;
+    font-family: 'coco';
+}
+
+
+footer {
+    background-color: #083139;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.social_icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social_icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social_icons a {
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #20636C; /* Couleur de fond des icônes */
+    padding : 10px;
+}
+
+p {
+    margin-top: 20px;
+}
+#foot{
+    font-family: 'geo';
+}
+
+
+
+  
+
+@media screen and (max-width: 767px) {
+    .navbar .logo{
+        position: absolute;
+        top: 40px;
+        left: 30px;
+    }
+
+    .navbar{
+        padding: 0;
+    }
+
+    .navbar .menu-hamburger{
+        display: block;
+    }
+
+    .nav-links{
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.595);
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links.mobile-menu{
+        margin-left: 0;
+    }
+
+    .nav-links .nav-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links li{
+        margin: 25px 0;
+
+    }
+
+    .navbar #menu1{
+        display: none;
+    }
+}
