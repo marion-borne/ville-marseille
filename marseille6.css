@@ -1,0 +1,324 @@
+@font-face{
+    font-family: 'coco';
+    src: url('font/Coco-Sharp-Extrabold-trial.ttf') format("opentype");
+}
+@font-face{
+    font-family: 'geo';
+    src: url('font/GeosansLight.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+#Histoire-titre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Histoire-titre h1{
+    font-family: 'coco';
+    font-size: 50pt;
+    color: white;
+    padding-block-start: 160px;
+}
+
+#container img{
+    width: 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-image: url(/photos/acceuil/baptiste-buisson-ijVwdPTMbO8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    height: 75vh;
+}
+
+header #menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar #menu1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: 'geo';
+    font-size: 15pt;
+}
+a{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.navbar ul a{
+    color: white;
+}
+
+.navbar .nav-links{
+    display: none;
+}
+
+.navbar a{
+    color: rgb(8,49,57);
+}
+
+#logo{
+    max-height: 65px;
+}
+
+.navbar .nav-links ul{
+    display: flex;
+}
+
+.navbar .nav-links ul li{
+    margin: 0 25px;
+    font-size: 1.2em;
+    font-family: 'geo';
+}
+.navbar .menu-hamburger{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+}
+
+
+:root{
+    --hauteur-menu: 60px;
+}
+
+.sous-menu{
+    display: none;
+    padding-top: 10px;
+}
+
+.sous-menu li{
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.448);
+}
+
+.sous-menu li:hover{
+    background-color:#083139;
+}
+
+.sous-menu li:hover > a{
+    color: white;
+}
+
+.menu-deroulant:hover > .sous-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+li .menu-deroulant{
+    text-align: right;
+}
+
+
+
+
+
+#contact{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.title h3{
+    font-size: 35pt;
+    color: #667C39;
+    margin-top: 10px;
+    font-family: 'coco';
+}
+
+.container{
+    margin-block-start: 40px;
+    margin-block-end: 40px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 30px 10px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 50px -10px rgb(0, 0, 0);
+
+}
+.container form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 600px;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+   
+.title h6{
+    font-size: 1em;
+}
+.title h3{
+    font-size: 2.2em;
+}
+input[type=text], textarea, input[type=email], .liste {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 0%;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    resize: vertical;
+    font-family: 'geo';
+    color: black;
+    font-size:10pt;
+}
+#fname{
+    font-family: 'geo';
+    font-size: 11pt;
+}
+#question{
+    font-family: 'geo';
+}
+
+.container form textarea{
+    width: 100%;
+    
+}
+.container form button{
+    width: 480px;
+    height: 50px;
+    border-radius:10px;
+    border: none;
+    background-color: #667C39;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 30px;
+    outline: none;
+}
+.container form input:hover{
+    border-bottom: 4px solid #B5C04A;
+}
+.container form textarea:hover{
+    border-bottom: 4px solid #B5C04A;
+}
+
+
+
+footer {
+    background-color: #46542E;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.social_icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social_icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social_icons a {
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #DCE09F; /* Couleur de fond des icônes */
+    padding : 10px;
+}
+
+p {
+    margin-top: 20px;
+}
+#foot{
+    font-family: 'geo';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .navbar .logo{
+        position: absolute;
+        top: 40px;
+        left: 30px;
+    }
+
+    .navbar{
+        padding: 0;
+    }
+
+    .navbar .menu-hamburger{
+        display: block;
+    }
+
+    .nav-links{
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.595);
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links.mobile-menu{
+        margin-left: 0;
+    }
+
+    .nav-links .nav-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links li{
+        margin: 25px 0;
+
+    }
+
+    .navbar #menu1{
+        display: none;
+    }
+}

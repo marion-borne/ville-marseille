@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="marseille6.css" /> 
+    <title>Fourmulaire de Contact</title>
+</head>
+<body>
+
+    <header>
+        <section id="menu">
+            <a href="https://marseille.fr" target="_blank"><img id="logo" src="/logo/Blason-Marseille.png"></a>
+            <nav class="navbar">
+                <ul id="menu1">    
+                    <li class="menu-deroulant">
+                        <a href="#" target="_blank">Histoire de Marseille</a>
+                        <ul class="sous-menu">
+                            <li><a href="marseille1.html" target="_blank">La fondation de Marseille</a></li>
+                            <li><a href="marseille1.html" target="_blank">Marseille au fil des siècles</a></li>
+                            <li><a href="marseille1.html" target="_blank">L'histoire de Marseille continue</a></li>
+                            <li><a href="marseille1.html" target="_blank">Il était une fois Marseille</a></li>
+                            <li><a href="marseille1.html" target="_blank">A travers des chiffres</a></li>
+                            <li><a href="marseille1.html" target="_blank">Les grandes dates</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="marseille2.html" target="_blank">Randonnées</a></li>
+                    <li><a href="marseille3.html" target="_blank">Plages</a></li>
+                    <li><a href="marseille4.html" target="_blank">Les espaces verts</a></li>
+                    <li><a href="marseille5.html" target="_blank">Musées</a></li>
+                    <li><a href="marseille6.html" target="_blank">Contact</a></li>
+                    <li><a href="marseille.html" target="_blank">Acceuil</a></li>
+                </ul>
+                <img src="/logo/burger.png" alt="burger-image" class="menu-hamburger">
+                <ul class="nav-links">
+                    <li><a href="marseille1.html" target="_blank">Histoire de Marseille</a></li>
+                    <li><a href="marseille2.html" target="_blank">Randonnées</a></li>
+                    <li><a href="marseille3.html" target="_blank">Plages</a></li>
+                    <li><a href="marseille4.html" target="_blank">Parcs Publics</a></li>
+                    <li><a href="marseille5.html" target="_blank">Musées</a></li>
+                    <li><a href="marseille6.html" target="_blank">Contact</a></li>
+                    <li><a href="marseille.html" target="_blank">Acceuil</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <article id="Histoire-titre">
+                    <h1>Nous Contacter</h1>
+        </article>
+    </header>
+
+    <main>
+        <section id="contact">
+
+            <div class="container">
+    
+            <div class="title">
+                <p id="question">Une question ? Un conseil ?<p>
+                <h3>Ecrivez-nous</h3>
+            </div>
+    
+            <form action="#" method="post">
+                <label id="fname">Genre</label>
+    
+                <br>
+                <select class="liste" name="genre">
+                    <option class="liste" value="Défault"></option>
+                    <option class="liste" value="Femme">Femme</option>
+                    <option class="liste" value="Homme">Homme</option>
+                    <option class="liste" value="Homme">Non binaire</option>
+                </select>
+                <br>
+    
+                <input type="text" name="name" placeholder="Entrez votre nom" required="">
+                <input type="email" name="email" placeholder="Entrez votre email" required="">
+                <input type="text" name="subject" placeholder="Entrez le sujet de votre demande" required="">
+                <input type="text" name="number" placeholder="Entrez votre numéro de Tel" required="">
+                <textarea type="message" placeholder="Entrez votre message"></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+    
+            </div>
+    
+        </section>
+    </main>
+
+    <footer>
+        <ul class="social_icons">
+        <!-- Ajout des liens vers les social medias de Marseille -->
+           <li><a href="https://www.instagram.com/villemarseille/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+           <li><a href="https://www.facebook.com/villedeMarseille" target="_blank"><i class="fab fa-facebook"></i></a></li>
+           <li><a href="https://www.youtube.com/user/villedemarseille" target="_blank"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+        <p id="foot">&copy; 2023 Site de la ville de Marseille City</p>
+       </footer>
+    
+</body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+
+</html>
