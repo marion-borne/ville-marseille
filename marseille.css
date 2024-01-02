@@ -39,7 +39,7 @@
 header{
     display: flex;
     flex-direction: column;
-    background-image: url("/photos/acceuil/alex-baumel-b4-7kQXV1bQ-unsplash.jpg");
+    background-image: url("photos/acceuil/alex-baumel-b4-7kQXV1bQ-unsplash.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
