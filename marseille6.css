@@ -33,7 +33,7 @@
 header{
     display: flex;
     flex-direction: column;
-    background-image: url(/photos/acceuil/baptiste-buisson-ijVwdPTMbO8-unsplash.jpg);
+    background-image: url(photos/acceuil/baptiste-buisson-ijVwdPTMbO8-unsplash.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
